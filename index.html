@@ -71,135 +71,33 @@
     }
 </style>
 
-<div class="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
-    <img src="assets/hero-bg3.svg" class="absolute inset-0 z-0 h-full w-full object-cover" alt="Background">
-    <div class="relative z-10 mx-auto max-w-7xl px-6 py-8">
-        <div class="flex flex-col items-center justify-center text-center">
-            <div class="space-y-4">
-                <h1 class="hero-title text-4xl font-black leading-tight tracking-tight text-primary dark:text-white sm:text-5xl lg:text-6xl">
-                    The 10th Tzu Chi Forum
-                </h1>
-                <h2 class="hero-theme text-xl font-bold text-primary/90 dark:text-white/80 sm:text-2xl lg:text-3xl">
-                    Technology for Goodness
-                </h2>
-                <div class="hero-date-location-container flex items-center justify-center pt-2 text-base font-medium text-slate-600 sm:text-lg lg:text-xl">
-                    <div class="hero-dates text-right">December 4-5, 2025</div>
-                    <div class="h-12 w-px bg-slate-500 mx-4"></div> <!-- Vertical Divider -->
-                    <div class="hero-country text-left"></div>
-                </div>
-            </div>
-            <div class="my-10 w-full max-w-lg rounded-lg border border-secondary-light/50 bg-background-light/30 p-6 backdrop-blur-sm dark:border-slate-700/50 dark:bg-background-dark/30 sm:my-12 sm:p-8">
-                <h3 class="text-xl font-bold uppercase tracking-widest text-primary/80 dark:text-secondary-light">Days Until Forum</h3>
-                <div class="mt-4 flex items-end justify-center gap-x-4 sm:gap-x-7">
-                    <div>
-                        <span id="days-countdown" class="text-5xl font-black text-primary dark:text-white sm:text-7xl">...</span>
-                        <span class="block text-l font-semibold text-slate-500 dark:text-slate-400">Days</span>
-                    </div>
-                    <div>
-                        <span id="hours-countdown" class="text-5xl font-black text-primary dark:text-white sm:text-7xl">...</span>
-                        <span class="block text-l font-semibold text-slate-500 dark:text-slate-400">Hours</span>
-                    </div>
-                </div>
-            </div>
-            <blockquote class="hero-quote max-w-xl border-l-4 border-primary/50 pl-4 text-lg italic text-slate-600 dark:border-secondary-light/50">
-                "Leveraging innovation to cultivate a world of compassion and sustainable well-being."
-            </blockquote>
-            <div class="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                <button id="about-forum-btn" class="group relative flex h-14 w-full min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-xl border-2 border-primary bg-white px-8 text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100 sm:w-auto">
-                    <span class="relative z-10 truncate">About the Forum</span>
-                    <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                </button>
-                <button id="view-agenda-btn" class="group relative flex h-14 w-full min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-primary px-8 text-base font-bold text-white shadow-xl shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 dark:bg-white dark:text-primary dark:hover:bg-white/90 sm:w-auto">
-                    <span class="relative z-10 truncate">View Agenda</span>
-                    <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                </button>
-                <button id="featured-speakers-btn" class="group relative flex h-14 w-full min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-xl border-2 border-primary bg-white px-8 text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100 sm:w-auto">
-                    <span class="relative z-10 truncate">Featured Speakers</span>
-                    <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                </button>
-            </div>
+<!-- Hero Banner -->
+<div class="w-full">
+    <!-- Desktop/Laptop banner -->
+    <img src="assets/banner.png" class="hidden md:block w-full h-auto object-cover" alt="Tzu Chi Forum Banner">
+    <!-- Mobile/Small screen banner -->
+    <img src="assets/banner-sm.png" class="block md:hidden w-full h-auto object-cover" alt="Tzu Chi Forum Banner">
+</div>
+
+<!-- Sticky Navigation Buttons -->
+<div id="hero-buttons" class="sticky top-0 z-50 w-full bg-white shadow-md transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 py-2 sm:py-4">
+        <div class="flex flex-row items-center justify-center gap-2 sm:gap-4">
+            <button id="about-forum-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
+                <span class="relative z-10 truncate"><span class="sm:hidden">About</span><span class="hidden sm:inline">About the Forum</span></span>
+                <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            </button>
+            <button id="view-agenda-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl bg-primary px-2 sm:px-8 text-xs sm:text-base font-bold text-white shadow-xl shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 dark:bg-white dark:text-primary dark:hover:bg-white/90">
+                <span class="relative z-10 truncate"><span class="sm:hidden">Agenda</span><span class="hidden sm:inline">View Agenda</span></span>
+                <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            </button>
+            <!-- <button id="featured-speakers-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
+                <span class="relative z-10 truncate"><span class="sm:hidden">Speakers</span><span class="hidden sm:inline">Featured Speakers</span></span>
+                <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            </button> -->
         </div>
     </div>
 </div>
-    <style type="text/tailwindcss">
-    @layer utilities {
-        @keyframes scroll {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
-        .animate-scroll {
-            animation: scroll 40s linear infinite;
-        }
-    }
-</style>
-
-<style>
-    .organizer-header {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-
-    .organizer-header.is-visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-</style>
-
-<section class="w-full py-12 md:py-20 lg:py-24 bg-white">
-    <div class="container mx-auto px-4 md:px-6">
-        <div class="organizer-header flex flex-col items-center justify-center space-y-4 text-center">
-            <div class="space-y-2">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">Organizers</h2>
-                <p class="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Meet the dedicated organizations behind The 10th Tzu Chi Forum.</p>
-            </div>
-        </div>
-        <div class="relative mt-12 w-full overflow-x-hidden overflow-y-visible [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)] py-8">
-            <div class="organizers-scroll-container flex w-max animate-scroll hover:animation-play-state-paused">
-                <div class="flex items-center justify-center gap-12 px-6 sm:gap-16 md:gap-20">
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Tzu Chi Charity Foundation</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Hang Seng University of Hong Kong</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Association for Well-being Economy</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Master Insight Media</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Center for the Study of Civilization of Goodness at Zhejiang University</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Economy of Goodness Society</p>
-                    </div>
-                </div>
-                <div aria-hidden="true" class="flex items-center justify-center gap-12 px-6 sm:gap-16 md:gap-20">
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Tzu Chi Charity Foundation</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Hang Seng University of Hong Kong</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Association for Well-being Economy</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Master Insight Media</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Center for the Study of Civilization of Goodness at Zhejiang University</p>
-                    </div>
-                    <div class="flex h-24 w-72 flex-shrink-0 items-center justify-center rounded-lg p-4 shadow-xl">
-                        <p class="text-center font-semibold leading-tight text-gray-800">Economy of Goodness Society</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
     <style>
     .bg-sprout-texture {
         background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232b4372' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 10l9.907-9.907L10 0l-9.907 9.907zM10 0l9.907 9.907L20 10l-9.907-9.907zM10 20l-9.907-9.907L0 10l9.907 9.907zM20 10l-9.907 9.907L10 20l9.907-9.907z'/%3E%3C/g%3E%3C/svg%3E");
@@ -283,22 +181,20 @@
     }
 </style>
 
-<section id="about-section" class="w-full relative flex flex-col min-h-screen">
-    <div class="relative z-15 bg-primary text-gray-100 py-12 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center overflow-visible">
-        <!-- Background foto -->
-        <div id="about-hero-bg" class="absolute inset-0 z-0 opacity-20 lg:opacity-30" style='background-image: url("assets/tech.png"); background-size: cover; background-position: center 20%; transform: scaleX(-1);'></div>
+<section id="about-section" class="w-full relative flex flex-col min-h-screen scroll-mt-16 sm:scroll-mt-20">
+    <!-- <div class="relative z-15 bg-primary text-gray-100 py-12 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center overflow-visible">
+        Background foto -->
+        <!-- <div id="about-hero-bg" class="absolute inset-0 z-0 opacity-20 lg:opacity-30" style='background-image: url("assets/ai-tech-bg.png"); background-size: cover; background-position: center 20%; transform: scaleX(-1);'></div> -->
         <!-- Texture overlay SVG pattern -->
-        <div class="absolute inset-0 z-0 opacity-20 lg:opacity-30 mix-blend-screen bg-sprout-texture"></div>
-        <!-- Gradient overlay -->
-        <div class="absolute inset-0 z-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+        <!-- <div class="absolute inset-0 z-0 opacity-20 lg:opacity-30 mix-blend-screen bg-sprout-texture"></div> --> -->
 
-        <div class="container mx-auto max-w-6xl relative z-10">
+        <!-- <div class="container mx-auto max-w-6xl relative z-10">
             <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-none tracking-tight">
                 <span class="block z-20 relative about-hero-line-1">TECHNOLOGY</span>
                 <span class="block relative mt-0.5 sm:mt-1 lg:mt-2 z-30 text-transparent about-hero-line-2" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);">FOR GOODNESS.</span>
             </h1>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
 
     <div class="relative z-20 bg-gray-100 text-gray-800 py-16 sm:py-24 px-4 sm:px-6 lg:px-8 flex-1 flex flex-col -mt-8 sm:-mt-10 lg:-mt-12">
         <div class="container mx-auto max-w-6xl">
@@ -313,7 +209,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start relative">
                 <div class="relative z-10">
                     <h2 id="about-title" class="about-title text-primary text-5xl sm:text-5xl font-extrabold tracking-tight leading-tight relative z-10">
-                        Harmonizing Technology with Humanistic Values
+                        Welcome to The 10th Tzu Chi Forum 2025
                     </h2>
                     <p id="about-desc-1" class="about-desc mt-6 text-base sm:text-lg font-normal max-w-3xl leading-relaxed z-20 relative text-justify">
                         Under the theme 'Technology for Goodness,' we confront the challenge of balancing rapid technological progress with timeless humanistic values. We aim to foster a dialogue on how innovation, guided by the Tzu Chi principles of sincerity, integrity, trust, and honesty, can serve humanity with wisdom and compassion.
@@ -324,7 +220,7 @@
                 </div>
                 <div class="about-image relative lg:ml-auto w-full max-w-lg lg:max-w-none h-[450px] sm:h-[550px] lg:h-[600px] -mr-8 sm:-mr-12 lg:-mr-16 overflow-hidden grainy-overlay group shadow-2xl hover:shadow-primary/50 transition-shadow duration-500">
                     <!-- Background image with hover effect -->
-                    <div id="about-side-image" class="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-110" style='background-image: url("assets/tech.png"); background-size: cover; background-position: center;'></div>
+                    <div id="about-side-image" class="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-110" style='background-image: url("assets/ai-tech-bg.png"); background-size: cover; background-position: center;'></div>
                     <!-- Gradient overlay untuk depth -->
                     <div class="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-primary/20"></div>
                     <!-- Dark overlay -->
@@ -416,7 +312,7 @@
     .agenda-item:nth-child(10) { transition-delay: 0.9s; }
 </style>
 
-<section class="agenda-section-bg w-full py-8 md:py-12 lg:py-16" id="agenda-section">
+<section class="agenda-section-bg w-full py-8 md:py-12 lg:py-16 scroll-mt-16 sm:scroll-mt-20" id="agenda-section">
     <div class="relative z-10 container mx-auto px-4 md:px-6">
         <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
             <div class="agenda-header p-6 md:p-10 lg:p-12 text-center border-b border-gray-200 bg-gradient-to-b from-gray-50 to-white">
@@ -592,7 +488,7 @@
     }
 </style>
 
-<section id="featured-speakers-section" class="relative w-full py-12 md:py-16 lg:py-20">
+<!-- <section id="featured-speakers-section" class="relative w-full py-12 md:py-16 lg:py-20 scroll-mt-16 sm:scroll-mt-20">
     <div class="absolute inset-0 z-0">
         <img src="assets/speaker-bg2.svg" alt="Speaker Background" class="w-full h-full object-cover" style="filter: contrast(1.1) saturate(1.1); image-rendering: high-quality;">
         <div class="absolute inset-0 bg-white/15"></div>
@@ -605,9 +501,9 @@
 
         <div class="speakers-container">
             <!-- Speaker cards will be dynamically loaded from PocketBase -->
-        </div>
+        <!-- </div>
     </div>
-</section>
+</section> --> 
     <style>
     #b-footer {
         background: linear-gradient(135deg, #1B2D58 0%, #2a4575 100%);
