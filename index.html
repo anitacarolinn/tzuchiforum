@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://info.tzuchi.org/favicon.svg">
+
+    <!-- HTML Meta Tags -->
+    <title>The 10th Tzu Chi Forum 2025 - Technology for Goodness</title>
+    <meta name="description" content="Join the 10th Tzu Chi Forum in Hong Kong, December 4-5, 2025. Exploring how technology guided by humanistic values can serve humanity with wisdom and compassion. Featuring distinguished speakers from academia, industry, and NGOs.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://forum.tzuchi-org.tw/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The 10th Tzu Chi Forum 2025 - Technology for Goodness">
+    <meta property="og:description" content="Join the 10th Tzu Chi Forum in Hong Kong, December 4-5, 2025. Exploring how technology guided by humanistic values can serve humanity with wisdom and compassion. Featuring distinguished speakers from academia, industry, and NGOs.">
+    <meta property="og:image" content="https://forum.tzuchi-org.tw/assets/banner.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="forum.tzuchi-org.tw">
+    <meta property="twitter:url" content="https://forum.tzuchi-org.tw/">
+    <meta name="twitter:title" content="The 10th Tzu Chi Forum 2025 - Technology for Goodness">
+    <meta name="twitter:description" content="Join the 10th Tzu Chi Forum in Hong Kong, December 4-5, 2025. Exploring how technology guided by humanistic values can serve humanity with wisdom and compassion. Featuring distinguished speakers from academia, industry, and NGOs.">
+    <meta name="twitter:image" content="https://forum.tzuchi-org.tw/assets/banner.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Tailwind config hanya di index.html -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1B2D58",
+                        "secondary-light": "#c8c8c9",
+                        "background-light": "#f6f7f8",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f6f7f8;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+
+</head>
+
+<body class="font-display">
+
+    <style>
+    #days-countdown, #hours-countdown {
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+
+    /* Active state for navigation buttons */
+    .nav-btn-active .nav-shadow {
+        opacity: 1 !important;
+    }
+</style>
+
+<!-- Hero Banner -->
+<div class="w-full">
+    <!-- Desktop/Laptop banner -->
+    <img src="assets/banner.jpg" class="hidden md:block w-full h-auto object-cover" alt="Tzu Chi Forum Banner">
+    <!-- Mobile/Small screen banner -->
+    <img src="assets/banner-sm.jpg" class="block md:hidden w-full h-auto object-contain" alt="Tzu Chi Forum Banner">
+</div>
+
+<!-- Sticky Navigation Buttons -->
+<div id="hero-buttons" class="sticky top-0 z-50 w-full bg-white shadow-md transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 py-2 sm:py-4">
+        <div class="flex flex-row items-center justify-center gap-2 sm:gap-4">
+            <button id="about-forum-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
+                <span class="relative z-10 truncate"><span class="sm:hidden">About</span><span class="hidden sm:inline">About the Forum</span></span>
+                <div class="nav-shadow absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#CEBCFF]/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            </button>
+            <button id="view-agenda-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl bg-primary px-2 sm:px-8 text-xs sm:text-base font-bold text-white shadow-xl shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 dark:bg-white dark:text-primary dark:hover:bg-white/90">
+                <span class="relative z-10 truncate"><span class="sm:hidden">Agenda</span><span class="hidden sm:inline">View Agenda</span></span>
+                <div class="nav-shadow absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#CEBCFF]/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            </button>
+            <button id="featured-speakers-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
+                <span class="relative z-10 truncate"><span class="sm:hidden">Speakers</span><span class="hidden sm:inline">Featured Speakers</span></span>
+                <div class="nav-shadow absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#CEBCFF]/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            </button>
+        </div>
+    </div>
+</div>
+    <style>
+    .bg-sprout-texture {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232b4372' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 10l9.907-9.907L10 0l-9.907 9.907zM10 0l9.907 9.907L20 10l-9.907-9.907zM10 20l-9.907-9.907L0 10l9.907 9.907zM20 10l-9.907 9.907L10 20l9.907-9.907z'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: 200px;
+        background-blend-mode: multiply;
+    }
+
+    .grainy-overlay {
+        position: relative;
+    }
+
+    .grainy-overlay::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWGBgmAcfAAAAHdFJOU3uK/N87wN/W1cK+iUoTfW62bVpB+9FzWb0n4AAAAJklEQVR4AWMYBsWAiQjBgIiJgYqBgYGJgUGFgYFhgEGDAIMBBgAMAI0CAx52c6QDAAAAAElFTkSuQmCC');
+        opacity: 0.1;
+        pointer-events: none;
+    }
+</style>
+
+<section id="about-section" class="w-full relative flex flex-col min-h-screen scroll-mt-16 sm:scroll-mt-20">
+    <!-- <div class="relative z-15 bg-primary text-gray-100 py-12 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center overflow-visible">
+        Background foto -->
+        <!-- <div id="about-hero-bg" class="absolute inset-0 z-0 opacity-20 lg:opacity-30" style='background-image: url("assets/ai-tech-bg.png"); background-size: cover; background-position: center 20%; transform: scaleX(-1);'></div> -->
+        <!-- Texture overlay SVG pattern -->
+        <!-- <div class="absolute inset-0 z-0 opacity-20 lg:opacity-30 mix-blend-screen bg-sprout-texture"></div> --> -->
+
+        <!-- <div class="container mx-auto max-w-6xl relative z-10">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-none tracking-tight">
+                <span class="block z-20 relative about-hero-line-1">TECHNOLOGY</span>
+                <span class="block relative mt-0.5 sm:mt-1 lg:mt-2 z-30 text-transparent about-hero-line-2" style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);">FOR GOODNESS.</span>
+            </h1>
+        </div> -->
+    <!-- </div> -->
+
+    <div class="relative z-20 bg-gray-100 text-gray-800 py-16 sm:py-24 px-4 sm:px-6 lg:px-8 flex-1 flex flex-col -mt-8 sm:-mt-10 lg:-mt-12">
+        <div class="container mx-auto max-w-6xl">
+            <!-- Welcome Text - Full Width -->
+            <!-- <div class="mb-12 lg:mb-16">
+                <p class="text-xl sm:text-2xl font-normal leading-relaxed text-gray-700 border-l-4 border-primary pl-6">
+                    Welcome to the 10th Tzu Chi Forum. Our mission is to explore technology's profound role in creating a better, more compassionate world for all.
+                </p>
+            </div> -->
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start relative">
+                <div class="relative z-10">
+                    <h2 id="about-title" class="about-title text-primary text-5xl sm:text-5xl font-extrabold tracking-tight leading-tight relative z-10">
+                        Welcome to The 10th Tzu Chi Forum 2025
+                    </h2>
+                    <p id="about-desc-1" class="about-desc mt-6 text-base sm:text-lg font-normal max-w-3xl leading-relaxed z-20 relative text-justify">
+                        Under the theme 'Technology for Goodness,' we confront the challenge of balancing rapid technological progress with timeless humanistic values. We aim to foster a dialogue on how innovation, guided by the Tzu Chi principles of sincerity, integrity, trust, and honesty, can serve humanity with wisdom and compassion.
+                    </p>
+                    <p id="about-desc-2" class="about-desc mt-6 text-base sm:text-lg font-normal max-w-3xl leading-relaxed z-20 relative text-justify">
+                        This forum is dedicated to exploring practical applications of technology in humanitarian aid, sustainable development, and societal well-being. Our ultimate goal is to inspire action that harmonizes technological advancement with the core values that connect us all.
+                    </p>
+                </div>
+                <div class="about-image relative mx-auto lg:ml-auto w-full max-w-lg lg:max-w-none h-[450px] sm:h-[500px] lg:h-[450px] lg:-mr-16 overflow-hidden grainy-overlay group shadow-2xl hover:shadow-primary/50 transition-shadow duration-500">
+                    <!-- Background image with hover effect -->
+                    <div id="about-side-image" class="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-110" style='background-image: url("assets/ai-tech-bg.png"); background-size: cover; background-position: center;'></div>
+                    <!-- Gradient overlay untuk depth -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-primary/20"></div>
+                    <!-- Dark overlay -->
+                    <div class="absolute inset-0 bg-black opacity-10 group-hover:opacity-5 transition-opacity duration-500"></div>
+                    <!-- Border accent -->
+                    <div class="absolute top-4 left-4 w-20 h-20 border-t-4 border-l-4 border-white/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute bottom-4 right-4 w-20 h-20 border-b-4 border-r-4 border-white/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+    .agenda-section-bg {
+        background: linear-gradient(-45deg, #f8fafc, #f1f5f9, #e0e7ff, #dbeafe);
+        background-size: 400% 400%;
+        position: relative;
+    }
+
+    .agenda-section-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            radial-gradient(circle at 20% 50%, rgba(27, 45, 88, 0.03) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(27, 45, 88, 0.02) 0%, transparent 50%),
+            radial-gradient(circle at 40% 20%, rgba(27, 45, 88, 0.02) 0%, transparent 50%);
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    .agenda-section-bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231B2D58' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    .agenda-header {
+    }
+
+    .agenda-item {
+    }
+</style>
+
+<section class="agenda-section-bg w-full py-8 md:py-12 lg:py-16 scroll-mt-16 sm:scroll-mt-20" id="agenda-section">
+    <div class="relative z-10 container mx-auto px-4 md:px-6">
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
+            <div class="agenda-header p-6 md:p-10 lg:p-12 text-center border-b border-gray-200 bg-gradient-to-b from-gray-50 to-white">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-primary">Forum Agenda</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-gray-600 md:text-lg">The 10th Tzu Chi Forum: Technology for Goodness</p>
+                <div class="mt-6 flex justify-center gap-4">
+                    <button id="btn-day-1" class="group relative flex items-center justify-center overflow-hidden rounded-xl bg-primary px-8 py-3 text-base font-bold text-white shadow-xl shadow-primary/30 transition-all duration-300 md:hover:scale-105 md:hover:shadow-2xl md:hover:shadow-primary/40">
+                        <span class="relative z-10">December 4</span>
+                        <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                    </button>
+                    <button id="btn-day-2" class="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gray-200 px-8 py-3 text-base font-bold text-gray-800 shadow-lg transition-all duration-300 md:hover:scale-105 md:hover:shadow-xl md:hover:bg-gray-300">
+                        <span class="relative z-10">December 5</span>
+                        <div class="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="p-6 md:p-8 lg:p-12 bg-gray-50">
+                <div class="max-w-6xl mx-auto">
+                    <div id="schedule-day-1">
+                        <div class="max-w-3xl mx-auto">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-primary text-center md:text-left">December 4</h3>
+                                <div class="agenda-location-day-1 flex items-center justify-center md:justify-start gap-2 text-base font-medium text-gray-600 mb-8"></div>
+                                <div class="relative pl-8 sm:pl-12">
+                                    <div class="absolute left-[7px] sm:left-[15px] top-4 bottom-0 w-0.5 bg-gradient-to-b from-primary via-gray-300 to-gray-300"></div>
+                                    <div class="space-y-10 agenda-day-1">
+                                        <!-- Content will be populated from database -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="schedule-day-2" style="display: none;">
+                        <div class="max-w-3xl mx-auto">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-primary text-center md:text-left">December 5</h3>
+                                <div class="agenda-location-day-2 flex items-center justify-center md:justify-start gap-2 text-base font-medium text-gray-600 mb-8"></div>
+                                <div class="relative pl-8 sm:pl-12">
+                                    <div class="absolute left-[7px] sm:left-[15px] top-4 bottom-0 w-0.5 bg-gradient-to-b from-primary via-gray-300 to-gray-300"></div>
+                                    <div class="space-y-10 agenda-day-2">
+                                        <!-- Content will be populated from database -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+    .section-header {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .speakers-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .speaker-card {
+        background: white;
+        border-radius: 12px;
+        overflow: visible;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e5e7eb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 24px 24px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+    }
+
+    .speaker-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 25px -5px rgba(27, 45, 88, 0.15), 0 8px 10px -6px rgba(27, 45, 88, 0.1);
+        border: 3px solid #1B2D58;
+    }
+
+    .speaker-image {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        border: 4px solid white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .speaker-card:hover .speaker-image {
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .speaker-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .speaker-name {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #1B2D58;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+    .speaker-position {
+        font-size: 0.875rem;
+        color: #6b7280;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    /* Responsive Grid */
+    @media (min-width: 640px) {
+        .speakers-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 768px) {
+        .speakers-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .speaker-image {
+            width: 140px;
+            height: 140px;
+        }
+
+        .speaker-card {
+            padding: 28px 20px 20px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .speakers-container {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .speaker-image {
+            width: 160px;
+            height: 160px;
+        }
+
+        .speaker-card {
+            padding: 32px 20px 24px;
+        }
+    }
+</style>
+
+<section id="featured-speakers-section" class="relative w-full py-12 md:py-16 lg:py-20 scroll-mt-16 sm:scroll-mt-20" style="background-image: url('assets/bg.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="section-header">
+            <h2 class="text-3xl font-bold text-center leading-tight tracking-tight pb-12" style="color: #4db8ff;">Distinguished Speakers</h2>
+            <p class="text-center -mt-8 mb-8" style="color: white;">Meet our distinguished speakers who will share their insights and expertise</p>
+        </div>
+
+        <div class="speakers-container">
+            <!-- Speaker cards will be dynamically loaded from JSON -->
+        </div>
+    </div>
+</section> 
+    <style>
+    #b-footer {
+        background: white;
+        color: #1B2D58;
+        position: relative;
+        overflow: hidden;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    #b-footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(27, 45, 88, 0.1), transparent);
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px 24px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+        color: #1B2D58;
+    }
+
+    .footer-support {
+        font-size: 14px;
+        color: #1B2D58;
+    }
+
+    .footer-support a {
+        color: #1B2D58;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .footer-support a::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #0073a5;
+        transition: width 0.3s ease;
+    }
+
+    .footer-support a:hover {
+        color: #0073a5;
+    }
+
+    .footer-support a:hover::after {
+        width: 100%;
+    }
+
+    @media (min-width: 640px) {
+        .footer-bottom {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 639px) {
+        .footer-container {
+            padding: 28px 20px;
+        }
+    }
+</style>
+
+<!-- Sticky Registration Button - Responsive -->
+<a href="https://pse.is/8c8mgr" target="_blank" rel="noopener noreferrer" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 bg-primary text-white rounded-full shadow-2xl hover:shadow-primary/50 hover:scale-110 transition-all duration-300 group cursor-pointer">
+    <!-- Mobile -->
+    <div class="flex flex-col items-center sm:hidden">
+        <span class="font-bold text-sm whitespace-nowrap leading-none">Click Here</span>
+        <span class="text-xs whitespace-nowrap opacity-90 leading-none mt-0.5">to Register</span>
+    </div>
+    <!-- Desktop -->
+    <div class="hidden sm:flex flex-col items-center">
+        <span class="font-bold text-lg whitespace-nowrap leading-none">Click Here</span>
+        <span class="text-sm whitespace-nowrap opacity-90 leading-none mt-0.5">to Register</span>
+    </div>
+    <span class="text-lg sm:text-xl">👈</span>
+    <span class="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 flex h-5 w-5 sm:h-6 sm:w-6">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-5 w-5 sm:h-6 sm:w-6 bg-red-500"></span>
+    </span>
+</a>
+
+<footer id="b-footer">
+    <div class="footer-container">
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © Tzu Chi Foundation. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Load Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

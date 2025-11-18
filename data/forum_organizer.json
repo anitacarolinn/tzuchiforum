@@ -1,0 +1,65 @@
+[
+  {
+    "collectionId": "pbc_3385923767",
+    "collectionName": "forum_organizer",
+    "company": "Tzu Chi Charity Foundation",
+    "id": "kvces5vfl4c916g",
+    "img": "tzuchifoundation_2icmoud0ma.png",
+    "organizer_type": "O",
+    "img_local": "assets/images/forum_organizer_kvces5vfl4c916g_tzuchifoundation_2icmoud0ma.png"
+  },
+  {
+    "collectionId": "pbc_3385923767",
+    "collectionName": "forum_organizer",
+    "company": "Master Insight Media",
+    "id": "9yxyuk7dsudy11q",
+    "img": "master_insight_media_9qg1tef720.png",
+    "organizer_type": "SO",
+    "img_local": "assets/images/forum_organizer_9yxyuk7dsudy11q_master_insight_media_9qg1tef720.png"
+  },
+  {
+    "collectionId": "pbc_3385923767",
+    "collectionName": "forum_organizer",
+    "company": "Center for the Study of Civilization of Goodness at Zhejiang University",
+    "id": "vikzdlaoysrol8p",
+    "img": "zhejiang_university_logo_og_hh36yp2bwl.png",
+    "organizer_type": "SO",
+    "img_local": "assets/images/forum_organizer_vikzdlaoysrol8p_zhejiang_university_logo_og_hh36yp2bwl.png"
+  },
+  {
+    "collectionId": "pbc_3385923767",
+    "collectionName": "forum_organizer",
+    "company": "Economy of Goodness Society",
+    "id": "dmu830ytg5k6c67",
+    "img": "economyofgoodness_logo_cptnk5u9ld.jpg",
+    "organizer_type": "SO",
+    "img_local": "assets/images/forum_organizer_dmu830ytg5k6c67_economyofgoodness_logo_cptnk5u9ld.jpg"
+  },
+  {
+    "collectionId": "pbc_3385923767",
+    "collectionName": "forum_organizer",
+    "company": "Hang Seng University of Hong Kong ",
+    "id": "y9tlspkf3jj47tm",
+    "img": "hsuhk_logo_mvz1fu62ny.png",
+    "organizer_type": "CO",
+    "img_local": "assets/images/forum_organizer_y9tlspkf3jj47tm_hsuhk_logo_mvz1fu62ny.png"
+  },
+  {
+    "collectionId": "pbc_3385923767",
+    "collectionName": "forum_organizer",
+    "company": "Association for Well-being Economy",
+    "id": "9373o6x4om4wk5d",
+    "img": "association_for_well_being_economy_440cph6jq1.jpg",
+    "organizer_type": "CO",
+    "img_local": "assets/images/forum_organizer_9373o6x4om4wk5d_association_for_well_being_economy_440cph6jq1.jpg"
+  },
+    {
+    "collectionId": "pbc_3385923768",
+    "collectionName": "forum_organizer",
+    "company": "Institute of Knowledge Exchange",
+    "id": "9373o6x4om4wk6d",
+    "img": "association_for_well_being_economy_440cph6jq1.jpg",
+    "organizer_type": "CO",
+    "img_local": "assets/images/forum_organizer_Bl2mbOHe.jpg"
+  }
+]

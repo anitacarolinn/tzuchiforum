@@ -1,0 +1,13 @@
+{
+  "name": "tzuchiforum-static-json",
+  "version": "1.0.0",
+  "description": "Tzu Chi Forum static site with JSON data",
+  "main": "script.js",
+  "scripts": {
+    "export": "node export-from-pocketbase.js"
+  },
+  "dependencies": {
+    "form-data": "^4.0.5",
+    "pocketbase": "^0.26.0"
+  }
+}
