@@ -116,7 +116,7 @@ function renderForumInfo(info) {
             const link1 = locationLinks[location1] || '#';
             agendaLocationDay1.innerHTML = `
                 <span class="material-symbols-outlined text-lg">location_on</span>
-                <a href="${link1}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80 transition-colors duration-200">${location1}</a>
+                <a href="${link1}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80">${location1}</a>
             `;
         }
         if (locationsArray.length > 1) {
@@ -124,46 +124,11 @@ function renderForumInfo(info) {
             const link2 = locationLinks[location2] || '#';
             agendaLocationDay2.innerHTML = `
                 <span class="material-symbols-outlined text-lg">location_on</span>
-                <a href="${link2}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80 transition-colors duration-200">${location2}</a>
+                <a href="${link2}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80">${location2}</a>
             `;
         }
     }
 
-    // --- Countdown Animation Function ---
-    function animateCountUp(element, target, duration = 2000) {
-        const start = 0;
-        const startTime = performance.now();
-
-        // Add animating class for pulse effect
-        element.classList.add('animating');
-
-        function update(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-
-            // Easing function for smooth animation (easeOutExpo)
-            const easeOutExpo = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-
-            const current = Math.floor(start + (target - start) * easeOutExpo);
-            element.textContent = current;
-
-            if (progress < 1) {
-                requestAnimationFrame(update);
-            } else {
-                element.textContent = target; // Ensure final value is exact
-                // Remove animating class after animation completes
-                setTimeout(() => {
-                    element.classList.remove('animating');
-                }, 100);
-            }
-        }
-
-        requestAnimationFrame(update);
-    }
-
-    // --- Countdown Logic ---
-    const daysCountdownElement = document.getElementById('days-countdown');
-    const hoursCountdownElement = document.getElementById('hours-countdown');
     if (daysCountdownElement && hoursCountdownElement && info.dates) {
         // Get the first date from the string (e.g., "2025-12-04;2025-12-05")
         const firstDateString = info.dates.split(';')[0];
@@ -178,9 +143,8 @@ function renderForumInfo(info) {
             const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
             const diffHours = Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-            // Animate the countdown numbers
-            animateCountUp(daysCountdownElement, diffDays, 2000);
-            animateCountUp(hoursCountdownElement, diffHours, 2200); // Slightly different duration for stagger effect
+            daysCountdownElement.textContent = diffDays;
+            hoursCountdownElement.textContent = diffHours;
         } else {
             daysCountdownElement.textContent = '0';
             hoursCountdownElement.textContent = '0';
@@ -319,7 +283,7 @@ function renderSchedule(scheduleItems) {
                          <span class="material-symbols-outlined text-base text-white">${iconName}</span>
                     </div>
                 </div>
-                <div class="ml-4 bg-white rounded-lg p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+                <div class="ml-4 bg-white rounded-lg p-4 shadow-sm border border-gray-100 hover:shadow-md">
                     <p class="font-semibold text-base text-gray-500 mb-2">${time}</p>
                     <h4 class="text-xl font-bold text-primary mb-1">${item.title}</h4>
                     ${sessionTypeHTML}
@@ -337,32 +301,6 @@ function renderSchedule(scheduleItems) {
     // Populate day 2
     scheduleByDate['2025-12-05'].forEach(item => {
         day2Container.innerHTML += createItemHTML(item);
-    });
-
-    // Add scroll reveal animation
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Observe agenda header
-    const agendaHeader = document.querySelector('.agenda-header');
-    if (agendaHeader) {
-        observer.observe(agendaHeader);
-    }
-
-    // Observe all agenda items
-    document.querySelectorAll('.agenda-item').forEach(item => {
-        observer.observe(item);
     });
 }
 
@@ -393,65 +331,6 @@ function renderSpeakers(speakers) {
     });
 }
 
-function initSpeakerAnimations() {
-    const speakerHeader = document.querySelector('.section-header');
-    const speakerCards = document.querySelectorAll('.speaker-card');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    // Observe header
-    if (speakerHeader) {
-        observer.observe(speakerHeader);
-    }
-
-    // Observe speaker cards
-    if (speakerCards.length) {
-        speakerCards.forEach((card, index) => {
-            // Apply staggered delay before observing
-            const delay = index * 15; // 15ms delay for each card
-            card.style.transitionDelay = `${delay}ms`;
-            observer.observe(card);
-        });
-    }
-}
-
-function initAboutAnimations() {
-    const heroLine1 = document.querySelector('.about-hero-line-1');
-    const heroLine2 = document.querySelector('.about-hero-line-2');
-    const aboutTitle = document.querySelector('.about-title');
-    const aboutDescs = document.querySelectorAll('.about-desc');
-    const aboutImage = document.querySelector('.about-image');
-
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Observe all elements
-    if (heroLine1) observer.observe(heroLine1);
-    if (heroLine2) observer.observe(heroLine2);
-    if (aboutTitle) observer.observe(aboutTitle);
-    if (aboutImage) observer.observe(aboutImage);
-    aboutDescs.forEach(desc => observer.observe(desc));
-}
-
-
 // Initialize: Load all data and add event listeners
 async function init() {
     // Load all embedded data
@@ -460,12 +339,6 @@ async function init() {
         fetchForumSchedule(),
         fetchForumSpeakers()
     ]);
-
-    // Initialize speaker animations
-    initSpeakerAnimations();
-
-    // Initialize about section animations
-    initAboutAnimations();
 
     // Add event listeners for scrolling
     const aboutBtn = document.getElementById('about-forum-btn');
@@ -504,17 +377,6 @@ async function init() {
             btnDay1.classList.remove('bg-gray-200', 'text-gray-800');
             btnDay2.classList.add('bg-gray-200', 'text-gray-800');
             btnDay2.classList.remove('bg-primary', 'text-white');
-
-            // Re-trigger animations for visible items
-            setTimeout(() => {
-                scheduleDay1.querySelectorAll('.agenda-item').forEach(item => {
-                    item.classList.remove('is-visible');
-                    item.offsetHeight; // Force reflow
-                    if (item.getBoundingClientRect().top < window.innerHeight) {
-                        item.classList.add('is-visible');
-                    }
-                });
-            }, 50);
         });
 
         btnDay2.addEventListener('click', () => {
@@ -524,17 +386,6 @@ async function init() {
             btnDay2.classList.remove('bg-gray-200', 'text-gray-800');
             btnDay1.classList.add('bg-gray-200', 'text-gray-800');
             btnDay1.classList.remove('bg-primary', 'text-white');
-
-            // Re-trigger animations for visible items
-            setTimeout(() => {
-                scheduleDay2.querySelectorAll('.agenda-item').forEach(item => {
-                    item.classList.remove('is-visible');
-                    item.offsetHeight; // Force reflow
-                    if (item.getBoundingClientRect().top < window.innerHeight) {
-                        item.classList.add('is-visible');
-                    }
-                });
-            }, 50);
         });
     }
 }
