@@ -1,10 +1,4 @@
-// Embedded JSON Data (no server required!)
-const FORUM_INFO_DATA = [{"collectionId":"pbc_4141392144","collectionName":"forum_info","country":"Hongkong","dates":"2025-12-04;2025-12-05","description":"In today's world, we are faced with a host of interconnected and complex challenges: extreme disasters driven by climate change, persistent inequality in the distribution of resources, worsening humanitarian crises, and ethical dilemmas arising from the rapid advancement of artificial intelligence and digital technologies. These \"wicked problems\" can no longer be addressed effectively by any single sector or organization alone. Instead, they demand integrated, cross-disciplinary thinking and collaborative solutions.;\r\nAs an international humanitarian organization grounded in the core value of altruism, the Tzu Chi Foundation draws its founding principles from the compassion of Buddhist teachings and puts altruism into practice throughout society. Master Cheng Yen, the founder, has called on professionals from all walks of life to join in advancing humanitarian care and social ethics.;\r\n\"Technology for Goodness\" emphasizes the integration of care, empathy, and ethical considerations into the application of technology. Whether in disaster response, healthcare, equitable education, or environmental sustainability, using technology ethically and for goodness of society is a vital pathway for fostering cross-sector collaboration and addressing the pressing challenges facing humanity.;\r\nThe 10th Tzu Chi Forum, themed \"Technology for Goodness,\" explores how we can harmonize humanistic values with modern technology and promote interdisciplinary collaboration. The forum seeks pathways to balance technological advancement with human-centered care, and to develop innovative solutions rooted in altruism and common goodness. By advancing ethical technology, social welfare, and sustainable development, the forum aims to address the world's most complex challenges.","id":"o5n7kvbr1v6znkv","img":"tech_rgkpcnatge.png","locations":"Hang Seng University, Hong Kong;Tzu Chi Charity Foundation, Kowloon Tong","quote":"\"Leveraging innovation to cultivate a world of compassion and sustainable well-being.\"","target_audience":"Leaders in Academia, Research, Public Services, Industry, and NGOs, approximately 150 to 200 pax","theme":"Technology for Goodness","title":"The 10th Tzu Chi Forum","img_local":"images/forum_info_o5n7kvbr1v6znkv_tech_rgkpcnatge.png"}];
-
-
-const FORUM_SCHEDULE_DATA = [{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"c6bpsxvhrdvxyex","panelists":"","session_type":"","start_time":"2025-12-04 08:30:00.000Z","title":"Reception Opens"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Simon Ho Shun-man (何順文), President, the Hang Seng University of Hong Kong;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation","id":"8yxbxj7cq56g4b2","panelists":"","session_type":"","start_time":"2025-12-04 09:00:00.000Z","title":"Opening Ceremony"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Peter Lee Ka-kit (李家傑), Chairman, Henderson Land Development Group","id":"8izkkqtvh3o6yr4","panelists":"","session_type":"","start_time":"2025-12-04 09:20:00.000Z","title":"Keynote Speech 1"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Bernard Charnwut Chan (陳智思), President, Asia Financial Group","id":"9f7f6yejxvjf58f","panelists":"","session_type":"","start_time":"2025-12-04 09:50:00.000Z","title":"Keynote Speech 2"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Frederick Chavalit Tsao (曹慰德), Chairman, IMC Group","id":"hboegmy1abl4yfl","panelists":"","session_type":"","start_time":"2025-12-04 10:20:00.000Z","title":"Keynote Speech 3"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"4pjn5cmdih8y78a","panelists":"","session_type":"","start_time":"2025-12-04 10:50:00.000Z","title":"Break"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation","id":"7pr4asn6hung8ev","panelists":"Peter Lee Ka-kit (李家傑), Chairman, Henderson Land Development Group;Bernard Charnwut Chan (陳智思), President, Asia Financial Group;Chavalit Frederick Tsao (曹慰德), Chairman, Tsao Pao Chee Group;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation;Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley","session_type":"","start_time":"2025-12-04 11:20:00.000Z","title":"Special Colloquium"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Man Cheuk Fei (文灼非), CEO, Master Insight Media","id":"lxsh6ly59ggxvj5","panelists":"Peter Hershock, Director of Asian Studies Development Program, East-West Center;Brian Grim(葛百彦), Founding President, Associate Scholar of Religious Freedom Project, Georgetown University;Ying Gang Sun (孫英剛), Professor of History, Zhejiang University","session_type":"AI Technology and Ethical Thinking","start_time":"2025-12-04 12:00:00.000Z","title":"Panel Discussion 1"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"r5tg3iiligjt0js","panelists":"","session_type":"","start_time":"2025-12-04 13:00:00.000Z","title":"Lunch"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley","id":"o2wiy6xpb6ct2l8","panelists":"","session_type":"","start_time":"2025-12-04 14:00:00.000Z","title":"Keynote Speech 4"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation","id":"p5nkfob0h9835rn","panelists":"","session_type":"","start_time":"2025-12-04 14:30:00.000Z","title":"Keynote Speech 5"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"John Wai-Keung Leung (梁偉強), Associate Vice President (Knowledge Exchange), The Hang Seng University of Hong Kong","id":"ylfohoyswl5c79y","panelists":"Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley;Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation","session_type":"","start_time":"2025-12-04 15:00:00.000Z","title":"Special Colloquium"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"z25yfw5dlvmncfa","panelists":"","session_type":"","start_time":"2025-12-04 15:40:00.000Z","title":"Break"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation","id":"126p5r8j9dc4fyy","panelists":"Jenn Chuan Chern (陳振川), Professor Emeritus of Civil Engineering at National Taiwan University, CEO at the Tang Prize Foundation;Yoshitsugu Hayashi, Distinguished Professor, Tokai-Gakuen University;Marshall Siao (蔡昇倫), Director, Jing Si Technology","session_type":"Compassionate Technology and Humanitarian Assistance","start_time":"2025-12-04 16:00:00.000Z","title":"Panel Discussion 2"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"endday1","panelists":"","session_type":"","start_time":"2025-12-04 17:00:00.000Z","title":"End of Day 1"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"pkowrzhizzlslmi","panelists":"","session_type":"","start_time":"2025-12-05 08:30:00.000Z","title":"Reception Opens"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Mr Brian SUN, our Assistant Commissioner (Data Applications), Digital Policy Office, The Government of the HKSAR of the People's Republic of China (to be confirmed)","id":"qmzol0tit44lem4","panelists":"","session_type":"","start_time":"2025-12-05 09:00:00.000Z","title":"Open Remarks"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Yong Hua Lin(林詠華), Vice president and Chief engineer of Beijing Academy of Artificial Intelligence","id":"x4yxoiz85doyp76","panelists":"","session_type":"","start_time":"2025-12-05 09:10:00.000Z","title":"Keynote Speech 6"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Kenneth Kwong(鄺家麒), Associate Director of the Institute of Knowledge Exchange at The Hang Seng University of Hong Kong","id":"tbs7i8ipfrcctj5","panelists":"Dr. Ricky Szeto, Chairman of the Advisory Committee, Center for Management as a Liberal Art, Hang Seng University of Hong Kong","session_type":"Managing for Social Impact in the Era of Technological Change","start_time":"2025-12-05 09:40:00.000Z","title":"Panel Discussion 3"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Fred Li, Managing Director, Gobi Partners","id":"keynote7","panelists":"","session_type":"Investing for Technology for Goodness","start_time":"2025-12-05 10:30:00.000Z","title":"Keynote Speech 7"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"v058fcckvr11swi","panelists":"","session_type":"","start_time":"2025-12-05 11:00:00.000Z","title":"Tea Break"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Kenneth Kwong(鄺家麒), Associate Director of the Institute of Knowledge Exchange at The Hang Seng University of Hong Kong","id":"kip0um2edp6q81f","panelists":"Eric Yu, Head of Operations, Tencent Sustainable Social Value;Eric Chan, Chief Public Mission Officer, Cyberport (to be confirmed)","session_type":"Corporate Co-Goodness and Social Practice","start_time":"2025-12-05 11:15:00.000Z","title":"Panel Discussion 4"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"qtyppfl0do7chgi","panelists":"","session_type":"","start_time":"2025-12-05 12:00:00.000Z","title":"Lunch"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Shrisankaraan Sankar Villupuram, Director, ARUP","id":"keynote8","panelists":"","session_type":"Innovation Technology for Sustainable Development (Climate Challenges, Energy Save, and Heritage Preservation)","start_time":"2025-12-05 13:30:00.000Z","title":"Keynote Speech 8"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Man Cheuk Fei (文灼非), CEO, Master Insight Media","id":"rxfimjjt3o2nsgn","panelists":"Anthony Sar, Co-founder and CEO, Finoverse;Chris Lam, MD & Head of Asset Management, Ping An Securities","session_type":"AI Innovation Technology for Building Trust, Consumer Journeys, and Massive Adoption","start_time":"2025-12-05 14:00:00.000Z","title":"Panel Discussion 5"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"Carrie Law, Board Advisor, Asian Artificial Intelligence Association; Founder, WOW IMPACT GROUP","id":"r31m6dhaadhtjtw","panelists":"Lily Yan, Chief Business Representative, Hong Kong & Macau Regions, iFlyTek;Man Cheuk Fei (文灼非), CEO, Master Insight Media;Representative, HK01","session_type":"Agentic AI Innovation Empowers Creative Collaboration and Humanistic Storytelling | Cantonese/Mandarin","start_time":"2025-12-05 14:40:00.000Z","title":"Panel Discussion 6"},{"collectionId":"pbc_1512106379","collectionName":"forum_schedule","host":"","id":"3ovc3fh90sx5ogt","panelists":"","session_type":"","start_time":"2025-12-05 15:20:00.000Z","title":"Closing Ceremony"}];
-
-const FORUM_SPEAKERS_DATA = [{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"8ydqvhsmxsh16ow","name":"Simon Ho Shun-man (何順文)","picture":"simon_ho_shun_man_fnsr0hiqkh.jpg","position":"President, Hang Seng University of Hong Kong","picture_local":"images/forum_speakers_8ydqvhsmxsh16ow_simon_ho_shun_man_fnsr0hiqkh.jpg","urlpath":"simon-ho-shun-man"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"xzjwjwuw2sgrmo5","name":"Po-Wen Yen (顏博文)","picture":"po_wen_yen_6n632cubos.jpg","position":"CEO, Tzu Chi Charity Foundation","picture_local":"images/forum_speakers_xzjwjwuw2sgrmo5_po_wen_yen_6n632cubos.jpg","urlpath":"po-wen-yen"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"my0afqtazfdv4ts","name":"Peter Lee Ka-kit (李家傑)","picture":"peter_lee_ka_kit_836maiychw.jpg","position":"Chairman, Henderson Land Development Group","picture_local":"images/forum_speakers_my0afqtazfdv4ts_peter_lee_ka_kit_836maiychw.jpg","urlpath":"peter-lee-ka-kit"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"w7pmr3955yuxxnu","name":"Bernard Charnwut Chan (陳智思)","picture":"bernard_charnwut_chan_ikiq0k3hax.jpg","position":"President, Asia Financial Group","picture_local":"images/forum_speakers_w7pmr3955yuxxnu_bernard_charnwut_chan_ikiq0k3hax.jpg","urlpath":"bernard-charnwut-chan"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"wkahjgifbei4wsl","name":"Frederick Chavalit Tsao (曹慰德)","picture":"chavalit_frederick_tsao_vfddlt8g9j.jpg","position":"Chairman, IMC Group","picture_local":"images/forum_speakers_wkahjgifbei4wsl_chavalit_frederick_tsao_vfddlt8g9j.jpg","urlpath":"frederick-chavalit-tsao"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"9qznikef3ixnnzo","name":"Rey-Sheng Her (何日生)","picture":"rey_sheng_her_vq1ai9xc6j.jpg","position":"Deputy CEO, Tzu Chi Charity Foundation","picture_local":"images/forum_speakers_9qznikef3ixnnzo_rey_sheng_her_vq1ai9xc6j.jpg","urlpath":"rey-sheng-her"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"o2474dtsdai0zoz","name":"Chris Bush","picture":"chris_bush_9p6wy8nz4j.png","position":"Executive Director, Institute for Business Innovation, UC Berkeley","picture_local":"images/forum_speakers_o2474dtsdai0zoz_chris_bush_9p6wy8nz4j.png","urlpath":"chris-bush"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"jm3m5ov28wgi4fb","name":"Man Cheuk Fei (文灼非)","picture":"man_cheuk_fei_edgg6l8fke.jpg","position":"CEO, Master Insight Media","picture_local":"images/forum_speakers_jm3m5ov28wgi4fb_man_cheuk_fei_edgg6l8fke.jpg","urlpath":"man-cheuk-fei"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"37sc417ts7dwiye","name":"Peter Hershock","picture":"peter_hershock_dyr5lhhqkt.jpg","position":"Director of Asian Studies Development Program, East-West Center","picture_local":"images/forum_speakers_37sc417ts7dwiye_peter_hershock_dyr5lhhqkt.jpg","urlpath":"peter-hershock"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"yfcxr32lubjxfcw","name":"Brian Grim(葛百彦)","picture":"brian_grim_ydwc2uyj1i.jpg","position":"Founding President, Associate Scholar of Religious Freedom Project, Georgetown University","picture_local":"images/forum_speakers_yfcxr32lubjxfcw_brian_grim_ydwc2uyj1i.jpg","urlpath":"brian-grim"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"hrcinp99cfpzweo","name":"Ying Gang Sun (孫英剛)","picture":"sun_yinggang_m75g6kc7ue.jpg","position":"Professor of History, Zhejiang University","picture_local":"images/forum_speakers_hrcinp99cfpzweo_sun_yinggang_m75g6kc7ue.jpg","urlpath":"ying-gang-sun"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"dr47g0hb0339n9r","name":"John Wai-Keung Leung (梁偉強)","picture":"leung_waikeung_1pgkwrtzzz.jpg","position":"Associate Vice President (Knowledge Exchange), The Hang Seng University of Hong Kong","picture_local":"images/forum_speakers_dr47g0hb0339n9r_leung_waikeung_1pgkwrtzzz.jpg","urlpath":"john-wai-keung-leung"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"bar5soip9qks5kz","name":"Jenn Chuan Chern (陳振川)","picture":"jenn_chuan_chern_88dygf4sga.jpg","position":"Professor Emeritus of Civil Engineering at National Taiwan University, CEO at the Tang Prize Foundation","picture_local":"images/forum_speakers_bar5soip9qks5kz_jenn_chuan_chern_88dygf4sga.jpg","urlpath":"jenn-chuan-chern"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"j1yzfmrxlxjt4sd","name":"Yoshitsugu Hayashi","picture":"yoshitsugu_hayashi_facial_photo_blue_back_c8mepomnk8.jpg","position":"Distinguished Professor, Tokai-Gakuen University","picture_local":"images/forum_speakers_j1yzfmrxlxjt4sd_yoshitsugu_hayashi_facial_photo_blue_back_c8mepomnk8.jpg","urlpath":"yoshitsugu-hayashi"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"38k40nzo25nhxh2","name":"Marshall Siao (蔡昇倫)","picture":"marshall_siao_ef9xky0ugb.jpg","position":"Director, Jing Si Technology","picture_local":"images/forum_speakers_38k40nzo25nhxh2_marshall_siao_ef9xky0ugb.jpg","urlpath":"marshall-siao"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"briansun001","name":"Brian SUN","picture":"placeholder.jpg","position":"Assistant Commissioner (Data Applications), Digital Policy Office, The Government of the HKSAR of the People's Republic of China","picture_local":"images/forum_speakers_briansun001_placeholder.jpg","urlpath":"brian-sun"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"f08soyq2l8kk04o","name":"Yong Hua Lin(林詠華)","picture":"yong_hua_lin_swxp0iy054.png","position":"Vice president and Chief engineer of Beijing Academy of Artificial Intelligence","picture_local":"images/forum_speakers_f08soyq2l8kk04o_yong_hua_lin_swxp0iy054.png","urlpath":"yong-hua-lin"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"kennethkwong001","name":"Kenneth Kwong(鄺家麒)","picture":"placeholder.jpg","position":"Associate Director of the Institute of Knowledge Exchange at The Hang Seng University of Hong Kong","picture_local":"images/forum_speakers_kennethkwong001_placeholder.jpg","urlpath":"kenneth-kwong"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"5dicz2f2bl8rm96","name":"Dr. Ricky Szeto","picture":"ricky_szeto_1_cmz8m1rix0.jpg","position":"Chairman of the Advisory Committee, Center for Management as a Liberal Art, Hang Seng University of Hong Kong","picture_local":"images/forum_speakers_5dicz2f2bl8rm96_ricky_szeto_1_cmz8m1rix0.jpg","urlpath":"dr-ricky-szeto"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"fredli001","name":"Fred Li","picture":"placeholder.jpg","position":"Managing Director, Gobi Partners","picture_local":"images/forum_speakers_fredli001_placeholder.jpg","urlpath":"fred-li"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"ericyu001","name":"Eric Yu","picture":"placeholder.jpg","position":"Head of Operations, Tencent Sustainable Social Value","picture_local":"images/forum_speakers_ericyu001_placeholder.jpg","urlpath":"eric-yu"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"a5ag6q1gxbdiq48","name":"Eric Chan","picture":"eric_chan_7m7t8s6y4h.jpeg","position":"Chief Public Mission Officer, Cyberport","picture_local":"images/forum_speakers_a5ag6q1gxbdiq48_eric_chan_7m7t8s6y4h.jpeg","urlpath":"eric-chan"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"shrisankaraan001","name":"Shrisankaraan Sankar Villupuram","picture":"placeholder.jpg","position":"Director, ARUP","picture_local":"images/forum_speakers_shrisankaraan001_placeholder.jpg","urlpath":"shrisankaraan-sankar-villupuram"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"anthonysar001","name":"Anthony Sar","picture":"placeholder.jpg","position":"Co-founder and CEO, Finoverse","picture_local":"images/forum_speakers_anthonysar001_placeholder.jpg","urlpath":"anthony-sar"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"chrislam001","name":"Chris Lam","picture":"placeholder.jpg","position":"MD & Head of Asset Management, Ping An Securities","picture_local":"images/forum_speakers_chrislam001_placeholder.jpg","urlpath":"chris-lam"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"2ige1qzuab8u691","name":"Carrie Law","picture":"1688439277729_2hugeppwmv.jpg","position":"Board Advisor, Asian Artificial Intelligence Association; Founder, WOW IMPACT GROUP","picture_local":"images/forum_speakers_2ige1qzuab8u691_1688439277729_2hugeppwmv.jpg","urlpath":"carrie-law"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"lilyyan001","name":"Lily Yan","picture":"placeholder.jpg","position":"Chief Business Representative, Hong Kong & Macau Regions, iFlyTek","picture_local":"images/forum_speakers_lilyyan001_placeholder.jpg","urlpath":"lily-yan"},{"collectionId":"pbc_567862126","collectionName":"forum_speakers","id":"hk01rep001","name":"Representative, HK01","picture":"placeholder.jpg","position":"HK01","picture_local":"images/forum_speakers_hk01rep001_placeholder.jpg","urlpath":"representative-hk01"}];
+// Load JSON data from /data folder
 
 // Load all partials first
 async function loadPartials() {
@@ -17,10 +11,11 @@ async function loadPartials() {
     await Promise.all(promises);
 }
 
-// --- Data Loading (uses embedded data) ---
+// --- Data Loading (loads from /data folder) ---
 async function fetchForumInfo() {
     try {
-        const records = FORUM_INFO_DATA;
+        const response = await fetch('data/forum_info.json');
+        const records = await response.json();
         console.log('Forum Info:', records);
         if (records.length > 0) {
             renderForumInfo(records[0]); // Use the first record
@@ -33,7 +28,8 @@ async function fetchForumInfo() {
 
 async function fetchForumSchedule() {
     try {
-        const records = FORUM_SCHEDULE_DATA;
+        const response = await fetch('data/forum_schedule.json');
+        const records = await response.json();
         console.log('Schedule:', records);
         renderSchedule(records);
     } catch (error) {
@@ -43,7 +39,8 @@ async function fetchForumSchedule() {
 
 async function fetchForumSpeakers() {
     try {
-        const records = FORUM_SPEAKERS_DATA;
+        const response = await fetch('data/forum_speakers.json');
+        const records = await response.json();
         console.log('Speakers:', records);
         renderSpeakers(records);
     } catch (error) {
@@ -113,7 +110,8 @@ function renderForumInfo(info) {
 
         if (locationsArray.length > 0) {
             const location1 = locationsArray[0].trim();
-            const link1 = locationLinks[location1] || '#';
+            const location1Base = location1.split('<br>')[0].trim();
+            const link1 = locationLinks[location1Base] || '#';
             agendaLocationDay1.innerHTML = `
                 <span class="material-symbols-outlined text-lg">location_on</span>
                 <a href="${link1}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80">${location1}</a>
@@ -121,7 +119,8 @@ function renderForumInfo(info) {
         }
         if (locationsArray.length > 1) {
             const location2 = locationsArray[1].trim();
-            const link2 = locationLinks[location2] || '#';
+            const location2Base = location2.split('<br>')[0].trim();
+            const link2 = locationLinks[location2Base] || '#';
             agendaLocationDay2.innerHTML = `
                 <span class="material-symbols-outlined text-lg">location_on</span>
                 <a href="${link2}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80">${location2}</a>
@@ -318,12 +317,18 @@ function renderSpeakers(speakers) {
         const speakerCard = document.createElement('div');
         speakerCard.className = 'speaker-card';
 
-        const imageUrl = speaker.picture_local || speaker.picture;
+        const imageUrl = speaker.picture;
+
+        // Add line break before Chinese name in parentheses
+        let displayName = speaker.name;
+        if (displayName.includes('(') && /[\u4e00-\u9fa5]/.test(displayName)) {
+            displayName = displayName.replace(/\s*\(/g, '<br>(');
+        }
 
         speakerCard.innerHTML = `
             <img src="${imageUrl}" alt="${speaker.name}" class="speaker-image">
             <div class="speaker-info">
-                <h3 class="speaker-name">${speaker.name}</h3>
+                <h3 class="speaker-name">${displayName}</h3>
                 <p class="speaker-position">${speaker.position}</p>
             </div>
         `;
@@ -343,25 +348,38 @@ async function init() {
     // Add event listeners for scrolling
     const aboutBtn = document.getElementById('about-forum-btn');
     const agendaBtn = document.getElementById('view-agenda-btn');
-    // const speakersBtn = document.getElementById('featured-speakers-btn');
+    const speakersBtn = document.getElementById('featured-speakers-btn');
+
+    // Function to set active button
+    const setActiveNavButton = (activeBtn) => {
+        // Remove active class from all buttons
+        [aboutBtn, agendaBtn, speakersBtn].forEach(btn => {
+            if (btn) btn.classList.remove('nav-btn-active');
+        });
+        // Add active class to the clicked button
+        if (activeBtn) activeBtn.classList.add('nav-btn-active');
+    };
 
     if (aboutBtn) {
         aboutBtn.addEventListener('click', () => {
+            setActiveNavButton(aboutBtn);
             document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
         });
     }
 
     if (agendaBtn) {
         agendaBtn.addEventListener('click', () => {
+            setActiveNavButton(agendaBtn);
             document.getElementById('agenda-section').scrollIntoView({ behavior: 'smooth' });
         });
     }
 
-    // if (speakersBtn) {
-    //     speakersBtn.addEventListener('click', () => {
-    //         document.getElementById('featured-speakers-section').scrollIntoView({ behavior: 'smooth' });
-    //     });
-    // }
+    if (speakersBtn) {
+        speakersBtn.addEventListener('click', () => {
+            setActiveNavButton(speakersBtn);
+            document.getElementById('featured-speakers-section').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 
     // Agenda button logic
     const btnDay1 = document.getElementById('btn-day-1');
@@ -373,19 +391,23 @@ async function init() {
         btnDay1.addEventListener('click', () => {
             scheduleDay1.style.display = 'block';
             scheduleDay2.style.display = 'none';
-            btnDay1.classList.add('bg-primary', 'text-white');
-            btnDay1.classList.remove('bg-gray-200', 'text-gray-800');
-            btnDay2.classList.add('bg-gray-200', 'text-gray-800');
-            btnDay2.classList.remove('bg-primary', 'text-white');
+            // Day 1 active state
+            btnDay1.classList.add('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
+            btnDay1.classList.remove('bg-gray-200', 'text-gray-800', 'shadow-lg');
+            // Day 2 inactive state
+            btnDay2.classList.add('bg-gray-200', 'text-gray-800', 'shadow-lg');
+            btnDay2.classList.remove('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
         });
 
         btnDay2.addEventListener('click', () => {
             scheduleDay1.style.display = 'none';
             scheduleDay2.style.display = 'block';
-            btnDay2.classList.add('bg-primary', 'text-white');
-            btnDay2.classList.remove('bg-gray-200', 'text-gray-800');
-            btnDay1.classList.add('bg-gray-200', 'text-gray-800');
-            btnDay1.classList.remove('bg-primary', 'text-white');
+            // Day 2 active state
+            btnDay2.classList.add('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
+            btnDay2.classList.remove('bg-gray-200', 'text-gray-800', 'shadow-lg');
+            // Day 1 inactive state
+            btnDay1.classList.add('bg-gray-200', 'text-gray-800', 'shadow-lg');
+            btnDay1.classList.remove('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
         });
     }
 }

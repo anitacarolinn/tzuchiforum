@@ -1,252 +1,191 @@
 [
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "c6bpsxvhrdvxyex",
-    "panelists": "",
-    "session_type": "",
+    "title": "Reception Opens",
     "start_time": "2025-12-04 08:30:00.000Z",
-    "title": "Reception Opens"
+    "host": "",
+    "panelists": "",
+    "session_type": ""
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Simon Ho Shun-man (何順文), President, Hang Seng University of Hong Kong ;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation;張曼莉副局長(to be confirmed)",
-    "id": "8yxbxj7cq56g4b2",
-    "panelists": "",
-    "session_type": "",
+    "title": "Opening Ceremony",
     "start_time": "2025-12-04 09:00:00.000Z",
-    "title": "Opening Ceremony"
+    "host": "Simon Ho Shun-man (何順文), President, the Hang Seng University of Hong Kong;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation",
+    "panelists": "",
+    "session_type": ""
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Peter Lee Ka-kit (李家傑), Chairman, Henderson Land Development Group",
-    "id": "8izkkqtvh3o6yr4",
-    "panelists": "",
-    "session_type": "",
+    "title": "Keynote Speech 1",
     "start_time": "2025-12-04 09:20:00.000Z",
-    "title": "Keynote Speech 1"
+    "host": "Peter Lee Ka-kit (李家傑), Chairman, Henderson Land Development Group",
+    "panelists": "",
+    "session_type": ""
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Bernard Charnwut Chan (陳智思), President, Asia Financial Group",
-    "id": "9f7f6yejxvjf58f",
-    "panelists": "",
-    "session_type": "",
+    "title": "Keynote Speech 2",
     "start_time": "2025-12-04 09:50:00.000Z",
-    "title": "Keynote Speech 2"
+    "host": "Bernard Charnwut Chan (陳智思), President, Asia Financial Group",
+    "panelists": "",
+    "session_type": ""
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Chavalit Frederick Tsao (曹慰德), Chairman, Tsao Pao Chee Group",
-    "id": "hboegmy1abl4yfl",
-    "panelists": "",
-    "session_type": "",
+    "title": "Keynote Speech 3",
     "start_time": "2025-12-04 10:20:00.000Z",
-    "title": "Keynote Speech 3"
+    "host": "Chavalit Frederick Tsao (曹慰德), Chairman, Tsao Pao Chee Group",
+    "panelists": "",
+    "session_type": ""
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "4pjn5cmdih8y78a",
-    "panelists": "",
-    "session_type": "",
+    "title": "Break",
     "start_time": "2025-12-04 10:50:00.000Z",
-    "title": "Break"
+    "host": "",
+    "panelists": "",
+    "session_type": ""
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation\r\n",
-    "id": "7pr4asn6hung8ev",
-    "panelists": "Peter Lee Ka-kit (李家傑), Chairman, Henderson Land Development Group;Bernard Charnwut Chan (陳智思), President, Asia Financial Group;Chavalit Frederick Tsao (曹慰德), Chairman, Tsao Pao Chee Group;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation;Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley",
-    "session_type": "",
+    "title": "Special Colloquium",
     "start_time": "2025-12-04 11:20:00.000Z",
-    "title": "Special Colloquium"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Man Cheuk Fei (文灼非), CEO, Master Insight Media",
-    "id": "lxsh6ly59ggxvj5",
-    "panelists": "Peter Hershock, Director of Asian Studies Development Program, East-West Center;Brian Grim(葛百彦), Founding President, Associate Scholar of Religious Freedom Project, Georgetown University;Ying Gang Sun (孫英剛), Professor of History, Zhejiang University\r\n",
-    "session_type": "AI Technology and Ethical Thinking",
-    "start_time": "2025-12-04 12:00:00.000Z",
-    "title": "Panel Discussion 1"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "r5tg3iiligjt0js",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-04 13:00:00.000Z",
-    "title": "Lunch"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley",
-    "id": "o2wiy6xpb6ct2l8",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-04 14:00:00.000Z",
-    "title": "Keynote Speech 4"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
     "host": "Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation",
-    "id": "p5nkfob0h9835rn",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-04 14:30:00.000Z",
-    "title": "Keynote Speech 5"
+    "panelists": "Peter Lee Ka-kit (李家傑), Chairman, Henderson Land Development Group;Bernard Charnwut Chan (陳智思), President, Asia Financial Group;Chavalit Frederick Tsao (曹慰德), Chairman, Tsao Pao Chee Group;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation;Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley",
+    "session_type": ""
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Wai-Keung Leung (梁偉強), Associate Vice-President, Hang Seng University of Hong Kong (to be confirmed)",
-    "id": "ylfohoyswl5c79y",
-    "panelists": "Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley;Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation\r\n",
-    "session_type": "",
-    "start_time": "2025-12-04 15:00:00.000Z",
-    "title": "Special Colloquium"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "z25yfw5dlvmncfa",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-04 15:30:00.000Z",
-    "title": "Break"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation",
-    "id": "126p5r8j9dc4fyy",
-    "panelists": "Jenn Chuan Chern (陳振川), Professor Emeritus of Civil Engineering at National Taiwan University, CEO at the Tang Prize Foundation;Yoshitsugu Hayashi, Distinguished Professor, Tokai-Gakuen University;Marshall Siao (蔡昇倫), Director, Jing Si Technology\r\n",
-    "session_type": "Compassionate Technology and Humanitarian Assistance",
-    "start_time": "2025-12-04 15:50:00.000Z",
-    "title": "Panel Discussion 2"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "cq52wypi10mattc",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-04 16:50:00.000Z",
-    "title": "End of Day 1"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "pkowrzhizzlslmi",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-05 08:30:00.000Z",
-    "title": "Reception Opens"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Ir Tony Wong, JP, Commissioner for Digital Policy, The Government of the HKSAR of the People’s Republic of China (to be confirmed)",
-    "id": "qmzol0tit44lem4",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-05 09:00:00.000Z",
-    "title": "Open Remarks"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Yong Hua Lin(林詠華), Vice president and chief engineer of Beijing Academy of Artificial Intelligence",
-    "id": "x4yxoiz85doyp76",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-05 09:10:00.000Z",
-    "title": "Keynote Speech 6"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Julia Wang, Co-Director of the Center for Management as a Liberal Art, Hang Seng University of Hong Kong",
-    "id": "tbs7i8ipfrcctj5",
-    "panelists": "Dr. Ricky Szeto, Chairman of the Center for Management as a Liberal Art, Hang Seng University of Hong Kong;Sarah Tam, Chief Customer Officer, Marketing & Partnership, Cigna Healthcare Hong Kong",
-    "session_type": "Managing for Social Impact in the Era of Technological Change",
-    "start_time": "2025-12-05 09:40:00.000Z",
-    "title": "Panel Discussion 4"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "v058fcckvr11swi",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-05 10:40:00.000Z",
-    "title": "Tea Break"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Representative from Hang Seng University of Hong Kong",
-    "id": "kip0um2edp6q81f",
-    "panelists": "譚偉倫教授，香港中文大學;Ewell Zhao, Vice President of Tencent Sustainable Social Value and Vice President of China Charity Alliance (to be confirmed);Eric Chan, Chief Public Mission Officer, Cyberport (to be confirmed)\r\n",
-    "session_type": "Corporate Co-Goodness and Social Practice",
-    "start_time": "2025-12-05 11:00:00.000Z",
-    "title": "Panel Discussion 5"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "",
-    "id": "qtyppfl0do7chgi",
-    "panelists": "",
-    "session_type": "",
-    "start_time": "2025-12-05 12:00:00.000Z",
-    "title": "Lunch"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
+    "title": "Panel Discussion 1",
+    "start_time": "2025-12-04 12:00:00.000Z",
     "host": "Man Cheuk Fei (文灼非), CEO, Master Insight Media",
-    "id": "rxfimjjt3o2nsgn",
-    "panelists": "Stephanie Law, Managing Director, Culture Homes Healthcare and Forward Living Senior Community (to be confirmed);Experts, Huawei/Huawei Cloud (to be confirmed);Aaron Ang, Deputy Vice President, Automated Systems Limited (to be confirmed)\r\n",
-    "session_type": "Benevolent Technology for Aging Societies: Innovations in Elderly Care Ecosystems",
-    "start_time": "2025-12-05 13:00:00.000Z",
-    "title": "Panel Discussion 6"
+    "panelists": "Peter Hershock, Director of Asian Studies Development Program, East-West Center;Brian Grim(葛百彥), Founding President, Religious Freedom & Business Foundation;Ying Gang Sun (孫英剛), Professor of History, Zhejiang University",
+    "session_type": "AI Technology and Ethical Thinking"
   },
   {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
-    "host": "Carrie Law, Board Advisor, Asian Artificial Intelligence Association & Founder, WOW IMPACT GROUP",
-    "id": "r31m6dhaadhtjtw",
-    "panelists": "訊飛 ai 照顧情緒(to be confirmed);趙國臣 中國實踐聯合會副會長、騰訊 SSV (to be confirmed);Man Cheuk Fei (文灼非), CEO, Master Insight Media\r\n",
-    "session_type": "Agentic AI Innovation Empowers Creative Collaboration and Humanistic Storytelling",
-    "start_time": "2025-12-05 14:20:00.000Z",
-    "title": "Panel Discussion 7"
-  },
-  {
-    "collectionId": "pbc_1512106379",
-    "collectionName": "forum_schedule",
+    "title": "Lunch",
+    "start_time": "2025-12-04 13:00:00.000Z",
     "host": "",
-    "id": "3ovc3fh90sx5ogt",
     "panelists": "",
-    "session_type": "",
+    "session_type": ""
+  },
+  {
+    "title": "Keynote Speech 4",
+    "start_time": "2025-12-04 14:00:00.000Z",
+    "host": "Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Keynote Speech 5",
+    "start_time": "2025-12-04 14:30:00.000Z",
+    "host": "Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Special Colloquium",
+    "start_time": "2025-12-04 15:00:00.000Z",
+    "host": "John Wai-Keung Leung (梁偉強), Associate Vice President (Knowledge Exchange), The Hang Seng University of Hong Kong",
+    "panelists": "Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley;Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation",
+    "session_type": ""
+  },
+  {
+    "title": "Break",
+    "start_time": "2025-12-04 15:40:00.000Z",
+    "host": "",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Panel Discussion 2",
+    "start_time": "2025-12-04 16:00:00.000Z",
+    "host": "Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation",
+    "panelists": "Jenn Chuan Chern (陳振川), Professor Emeritus of Civil Engineering at National Taiwan University, CEO at the Tang Prize Foundation;Yoshitsugu Hayashi, Distinguished Professor, Tokai-Gakuen University;Marshall Siao (蔡昇倫), Director, Jing Si Technology",
+    "session_type": "Compassionate Technology and Humanitarian Assistance"
+  },
+  {
+    "title": "End of Day 1",
+    "start_time": "2025-12-04 17:00:00.000Z",
+    "host": "",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Reception Opens",
+    "start_time": "2025-12-05 08:30:00.000Z",
+    "host": "",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Open Remarks",
+    "start_time": "2025-12-05 09:00:00.000Z",
+    "host": "Mr Brian SUN, our Assistant Commissioner (Data Applications), Digital Policy Office, The Government of the HKSAR of the People's Republic of China (to be confirmed)",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Keynote Speech 6",
+    "start_time": "2025-12-05 09:10:00.000Z",
+    "host": "Yong Hua Lin(林詠華), Vice president and Chief engineer of Beijing Academy of Artificial Intelligence",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Panel Discussion 3",
+    "start_time": "2025-12-05 09:40:00.000Z",
+    "host": "Kenneth Kwong(鄺家麒), Associate Director of the Institute of Knowledge Exchange at The Hang Seng University of Hong Kong",
+    "panelists": "Dr. Ricky Szeto, Chairman of the Advisory Committee, Center for Management as a Liberal Art, Hang Seng University of Hong Kong",
+    "session_type": "Managing for Social Impact in the Era of Technological Change"
+  },
+  {
+    "title": "Keynote Speech 7",
+    "start_time": "2025-12-05 10:30:00.000Z",
+    "host": "Fred Li, Managing Director, Gobi Partners",
+    "panelists": "",
+    "session_type": "Investing for Technology for Goodness"
+  },
+  {
+    "title": "Tea Break",
+    "start_time": "2025-12-05 11:00:00.000Z",
+    "host": "",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Panel Discussion 4",
+    "start_time": "2025-12-05 11:15:00.000Z",
+    "host": "Kenneth Kwong(鄺家麒), Associate Director of the Institute of Knowledge Exchange at The Hang Seng University of Hong Kong",
+    "panelists": "Eric Yu, Head of Operations, Tencent Sustainable Social Value",
+    "session_type": "Corporate Co-Goodness and Social Practice"
+  },
+  {
+    "title": "Lunch",
+    "start_time": "2025-12-05 12:00:00.000Z",
+    "host": "",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Keynote Speech 8",
+    "start_time": "2025-12-05 13:30:00.000Z",
+    "host": "Shrisankaraan Sankar Villupuram, Director, ARUP",
+    "panelists": "",
+    "session_type": "Innovation Technology for Sustainable Development (Climate Challenges, Energy Save, and Heritage Preservation)"
+  },
+  {
+    "title": "Panel Discussion 5",
+    "start_time": "2025-12-05 14:00:00.000Z",
+    "host": "Man Cheuk Fei (文灼非), CEO, Master Insight Media",
+    "panelists": "Anthony Sar, Co-founder and CEO, Finoverse;Chris Lam, MD & Head of Asset Management, Ping An Securities",
+    "session_type": "AI Innovation Technology for Building Trust, Consumer Journeys, and Massive Adoption"
+  },
+  {
+    "title": "Panel Discussion 6",
+    "start_time": "2025-12-05 14:40:00.000Z",
+    "host": "Carrie Law, Board Advisor, Asian Artificial Intelligence Association & Founder, WOW IMPACT GROUP",
+    "panelists": "Lily Yan, Chief Business Representative, Hong Kong & Macau Regions, iFlyTek;Man Cheuk Fei (文灼非), CEO, Master Insight Media;Representative, HK01",
+    "session_type": "Agentic AI Innovation Empowers Creative Collaboration and Humanistic Storytelling | Cantonese/Mandarin"
+  },
+  {
+    "title": "Closing Ceremony",
     "start_time": "2025-12-05 15:20:00.000Z",
-    "title": "Closing Ceremony"
+    "host": "",
+    "panelists": "",
+    "session_type": ""
   }
 ]
