@@ -114,7 +114,10 @@ function renderForumInfo(info) {
             const link1 = locationLinks[location1Base] || '#';
             agendaLocationDay1.innerHTML = `
                 <span class="material-symbols-outlined text-lg">location_on</span>
-                <a href="${link1}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80">${location1}</a>
+                <a href="${link1}" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-[#0073a5] transition-colors cursor-pointer font-semibold flex items-center gap-1">
+                    ${location1}
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+                </a>
             `;
         }
         if (locationsArray.length > 1) {
@@ -123,7 +126,10 @@ function renderForumInfo(info) {
             const link2 = locationLinks[location2Base] || '#';
             agendaLocationDay2.innerHTML = `
                 <span class="material-symbols-outlined text-lg">location_on</span>
-                <a href="${link2}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline hover:text-primary/80">${location2}</a>
+                <a href="${link2}" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-[#0073a5] transition-colors cursor-pointer font-semibold flex items-center gap-1">
+                    ${location2}
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+                </a>
             `;
         }
     }
@@ -317,7 +323,8 @@ function renderSpeakers(speakers) {
         const speakerCard = document.createElement('div');
         speakerCard.className = 'speaker-card';
 
-        const imageUrl = speaker.picture;
+        // Use Cloudflare hosted images (2K variant), fallback to local if needed
+        const imageUrl = speaker.picture_url || speaker.picture;
 
         // Add line break before Chinese name in parentheses
         let displayName = speaker.name;
@@ -350,6 +357,10 @@ async function init() {
     const agendaBtn = document.getElementById('view-agenda-btn');
     const speakersBtn = document.getElementById('featured-speakers-btn');
 
+    const aboutSection = document.getElementById('about-section');
+    const agendaSection = document.getElementById('agenda-section');
+    const speakersSection = document.getElementById('featured-speakers-section');
+
     // Function to set active button
     const setActiveNavButton = (activeBtn) => {
         // Remove active class from all buttons
@@ -360,23 +371,50 @@ async function init() {
         if (activeBtn) activeBtn.classList.add('nav-btn-active');
     };
 
+    // Scroll spy: Activate button based on current section in view
+    const handleScrollSpy = () => {
+        const scrollPosition = window.scrollY + 200; // Offset for sticky header
+
+        // Get section positions
+        const aboutTop = aboutSection?.offsetTop || 0;
+        const agendaTop = agendaSection?.offsetTop || 0;
+        const speakersTop = speakersSection?.offsetTop || 0;
+
+        // Determine which section is currently in view
+        if (scrollPosition >= speakersTop) {
+            setActiveNavButton(speakersBtn);
+        } else if (scrollPosition >= agendaTop) {
+            setActiveNavButton(agendaBtn);
+        } else if (scrollPosition >= aboutTop) {
+            setActiveNavButton(aboutBtn);
+        }
+    };
+
+    // Add scroll event listener for scroll spy
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        // Debounce scroll event for performance
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(handleScrollSpy, 10);
+    });
+
+    // Initial call to set active button on page load
+    handleScrollSpy();
+
     if (aboutBtn) {
         aboutBtn.addEventListener('click', () => {
-            setActiveNavButton(aboutBtn);
             document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
         });
     }
 
     if (agendaBtn) {
         agendaBtn.addEventListener('click', () => {
-            setActiveNavButton(agendaBtn);
             document.getElementById('agenda-section').scrollIntoView({ behavior: 'smooth' });
         });
     }
 
     if (speakersBtn) {
         speakersBtn.addEventListener('click', () => {
-            setActiveNavButton(speakersBtn);
             document.getElementById('featured-speakers-section').scrollIntoView({ behavior: 'smooth' });
         });
     }
