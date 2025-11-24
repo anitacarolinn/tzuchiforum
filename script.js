@@ -1,4 +1,6 @@
 // Load JSON data from /data folder
+// Script Version: 2.2 - Fixed button colors + countdown error
+console.log('🚀 Script loaded - Version 2.2 - Button color fix + countdown error fixed');
 
 // Load all partials first
 async function loadPartials() {
@@ -50,6 +52,10 @@ async function fetchForumSpeakers() {
 
 // --- Render Functions ---
 function renderForumInfo(info) {
+    // Get countdown elements (may not exist in HTML)
+    const daysCountdownElement = document.getElementById('days-countdown');
+    const hoursCountdownElement = document.getElementById('hours-countdown');
+
     // Update hero section with forum info
     const titleElement = document.querySelector('.hero-title');
     const themeElement = document.querySelector('.hero-theme');
@@ -355,20 +361,38 @@ async function init() {
     // Add event listeners for scrolling
     const aboutBtn = document.getElementById('about-forum-btn');
     const agendaBtn = document.getElementById('view-agenda-btn');
-    const speakersBtn = document.getElementById('featured-speakers-btn');
 
     const aboutSection = document.getElementById('about-section');
     const agendaSection = document.getElementById('agenda-section');
-    const speakersSection = document.getElementById('featured-speakers-section');
 
     // Function to set active button
     const setActiveNavButton = (activeBtn) => {
-        // Remove active class from all buttons
-        [aboutBtn, agendaBtn, speakersBtn].forEach(btn => {
-            if (btn) btn.classList.remove('nav-btn-active');
+        console.log('🔵 setActiveNavButton called', activeBtn ? activeBtn.id : 'null'); // Debug log
+        // Remove active class from all buttons and reset to inactive state
+        [aboutBtn, agendaBtn].forEach(btn => {
+            if (btn) {
+                btn.classList.remove('nav-btn-active');
+                // Reset to default white background
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('bg-white', 'text-primary');
+                // Remove inline styles if any
+                btn.style.removeProperty('background-color');
+                btn.style.removeProperty('color');
+                btn.style.removeProperty('box-shadow');
+            }
         });
         // Add active class to the clicked button
-        if (activeBtn) activeBtn.classList.add('nav-btn-active');
+        if (activeBtn) {
+            activeBtn.classList.add('nav-btn-active');
+            // Explicitly set active styles
+            activeBtn.classList.remove('bg-white', 'text-primary');
+            activeBtn.classList.add('bg-primary', 'text-white');
+            // Force styles with inline CSS as backup (highest priority)
+            activeBtn.style.setProperty('background-color', '#1B2D58', 'important');
+            activeBtn.style.setProperty('color', 'white', 'important');
+            activeBtn.style.setProperty('box-shadow', '0 20px 25px -5px rgba(27, 45, 88, 0.3), 0 8px 10px -6px rgba(27, 45, 88, 0.3)', 'important');
+            console.log('✅ Active styles applied to', activeBtn.id); // Debug log
+        }
     };
 
     // Scroll spy: Activate button based on current section in view
@@ -378,15 +402,15 @@ async function init() {
         // Get section positions
         const aboutTop = aboutSection?.offsetTop || 0;
         const agendaTop = agendaSection?.offsetTop || 0;
-        const speakersTop = speakersSection?.offsetTop || 0;
 
         // Determine which section is currently in view
-        if (scrollPosition >= speakersTop) {
-            setActiveNavButton(speakersBtn);
-        } else if (scrollPosition >= agendaTop) {
+        if (scrollPosition >= agendaTop) {
             setActiveNavButton(agendaBtn);
         } else if (scrollPosition >= aboutTop) {
             setActiveNavButton(aboutBtn);
+        } else {
+            // In hero section - remove active from all buttons
+            setActiveNavButton(null);
         }
     };
 
@@ -413,12 +437,6 @@ async function init() {
         });
     }
 
-    if (speakersBtn) {
-        speakersBtn.addEventListener('click', () => {
-            document.getElementById('featured-speakers-section').scrollIntoView({ behavior: 'smooth' });
-        });
-    }
-
     // Agenda button logic
     const btnDay1 = document.getElementById('btn-day-1');
     const btnDay2 = document.getElementById('btn-day-2');
@@ -427,25 +445,35 @@ async function init() {
 
     if (btnDay1 && btnDay2 && scheduleDay1 && scheduleDay2) {
         btnDay1.addEventListener('click', () => {
+            console.log('🔵 Day 1 clicked'); // Debug log
             scheduleDay1.style.display = 'block';
             scheduleDay2.style.display = 'none';
             // Day 1 active state
             btnDay1.classList.add('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
             btnDay1.classList.remove('bg-gray-200', 'text-gray-800', 'shadow-lg');
+            btnDay1.style.setProperty('background-color', '#1B2D58', 'important');
+            btnDay1.style.setProperty('color', 'white', 'important');
             // Day 2 inactive state
             btnDay2.classList.add('bg-gray-200', 'text-gray-800', 'shadow-lg');
             btnDay2.classList.remove('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
+            btnDay2.style.removeProperty('background-color');
+            btnDay2.style.removeProperty('color');
         });
 
         btnDay2.addEventListener('click', () => {
+            console.log('🔵 Day 2 clicked'); // Debug log
             scheduleDay1.style.display = 'none';
             scheduleDay2.style.display = 'block';
             // Day 2 active state
             btnDay2.classList.add('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
             btnDay2.classList.remove('bg-gray-200', 'text-gray-800', 'shadow-lg');
+            btnDay2.style.setProperty('background-color', '#1B2D58', 'important');
+            btnDay2.style.setProperty('color', 'white', 'important');
             // Day 1 inactive state
             btnDay1.classList.add('bg-gray-200', 'text-gray-800', 'shadow-lg');
             btnDay1.classList.remove('bg-primary', 'text-white', 'shadow-xl', 'shadow-primary/30');
+            btnDay1.style.removeProperty('background-color');
+            btnDay1.style.removeProperty('color');
         });
     }
 }

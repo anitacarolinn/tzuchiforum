@@ -79,8 +79,17 @@
     }
 
     /* Active state for navigation buttons */
-    .nav-btn-active .nav-shadow {
-        opacity: 1 !important;
+    .nav-btn-active {
+        background-color: #1B2D58 !important;
+        color: white !important;
+        box-shadow: 0 20px 25px -5px rgba(27, 45, 88, 0.3), 0 8px 10px -6px rgba(27, 45, 88, 0.3) !important;
+        border-color: #1B2D58 !important;
+    }
+
+    /* Ensure hover states don't interfere with active state */
+    button.nav-btn-active:hover {
+        background-color: #1B2D58 !important;
+        color: white !important;
     }
 </style>
 
@@ -98,16 +107,13 @@
         <div class="flex flex-row items-center justify-center gap-2 sm:gap-4">
             <button id="about-forum-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
                 <span class="relative z-10 truncate"><span class="sm:hidden">About</span><span class="hidden sm:inline">About the Forum</span></span>
-                <div class="nav-shadow absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#CEBCFF]/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
             </button>
-            <button id="view-agenda-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl bg-primary px-2 sm:px-8 text-xs sm:text-base font-bold text-white shadow-xl shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 dark:bg-white dark:text-primary dark:hover:bg-white/90">
+            <button id="view-agenda-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
                 <span class="relative z-10 truncate"><span class="sm:hidden">Agenda</span><span class="hidden sm:inline">View Agenda</span></span>
-                <div class="nav-shadow absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#CEBCFF]/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
             </button>
-            <button id="featured-speakers-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
+            <!-- <button id="featured-speakers-btn" class="group relative flex h-10 sm:h-14 w-auto sm:min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border-2 border-primary bg-white px-2 sm:px-8 text-xs sm:text-base font-bold text-primary shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-primary/5 dark:bg-white dark:text-primary dark:hover:bg-gray-100">
                 <span class="relative z-10 truncate"><span class="sm:hidden">Speakers</span><span class="hidden sm:inline">Featured Speakers</span></span>
-                <div class="nav-shadow absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#CEBCFF]/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-            </button>
+            </button> -->
         </div>
     </div>
 </div>
@@ -520,7 +526,7 @@
 </footer>
 
     <!-- Load Script -->
-    <script src="script.js"></script>
+    <script src="script.js?v=2.2"></script>
 
 </body>
 </html>
