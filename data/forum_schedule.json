@@ -45,7 +45,7 @@
     "title": "Special Colloquium",
     "start_time": "2025-12-04 11:20:00.000Z",
     "host": "Rey-Sheng Her (何日生), Deputy CEO, Tzu Chi Charity Foundation",
-    "panelists": "Peter Lee Ka-kit (李家傑), Chairman, Henderson Land Development Group;Bernard Charnwut Chan (陳智思), President, Asia Financial Group;Chavalit Frederick Tsao (曹慰德), Chairman, Tsao Pao Chee Group;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation;Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley",
+    "panelists": "Bernard Charnwut Chan (陳智思), President, Asia Financial Group;Chavalit Frederick Tsao (曹慰德), Chairman, Tsao Pao Chee Group;Po-Wen Yen (顏博文), CEO, Tzu Chi Charity Foundation;Chris Bush, Executive Director, Institute for Business Innovation, UC Berkeley",
     "session_type": ""
   },
   {
@@ -114,7 +114,7 @@
   {
     "title": "Open Remarks",
     "start_time": "2025-12-05 09:00:00.000Z",
-    "host": "Brian SUN, our Assistant Commissioner (Data Applications), Digital Policy Office, The Government of the HKSAR of the People's Republic of China (to be confirmed)",
+    "host": "Brian SUN, Assistant Commissioner (Data Applications), Digital Policy Office, The Government of the HKSAR of the People's Republic of China",
     "panelists": "",
     "session_type": ""
   },
@@ -165,7 +165,7 @@
     "start_time": "2025-12-05 13:30:00.000Z",
     "host": "Shrisankaraan Sankar Villupuram, Director, ARUP",
     "panelists": "",
-    "session_type": "Innovation Technology for Sustainable Development (Climate Challenges, Energy Save, and Heritage Preservation)"
+    "session_type": "Innovation Technology for Sustainable Development (Climate Challenges, Energy Saving, and Heritage Preservation)"
   },
   {
     "title": "Panel Discussion 5",
@@ -178,12 +178,26 @@
     "title": "Panel Discussion 6",
     "start_time": "2025-12-05 14:40:00.000Z",
     "host": "Carrie Law, Board Advisor, Asian Artificial Intelligence Association & Founder, WOW IMPACT GROUP",
-    "panelists": "Lily Yan, Chief Business Representative, Hong Kong & Macau Regions, iFlyTek;Man Cheuk Fei (文灼非), CEO, Master Insight Media;Representative, HK01",
+    "panelists": "Lily Yan, Chief Business Representative, Hong Kong & Macau Regions, iFlyTek;Man Cheuk Fei (文灼非), CEO, Master Insight Media;Ray Lo, Chief Marketing Officer, HK01",
     "session_type": "Agentic AI Innovation Empowers Creative Collaboration and Humanistic Storytelling | Cantonese/Mandarin"
   },
   {
-    "title": "Closing Ceremony",
+    "title": "Keynote Speech 9",
     "start_time": "2025-12-05 15:20:00.000Z",
+    "host": "Albert Ko, Founding Director of United Nations University (UNU) Hub on Humanitarian Innovation and Technology (HIT)",
+    "panelists": "",
+    "session_type": "Humanistic Technology for Deprived Communities and Emerging Countries"
+  },
+  {
+    "title": "Closing Ceremony",
+    "start_time": "2025-12-05 15:50:00.000Z",
+    "host": "",
+    "panelists": "",
+    "session_type": ""
+  },
+  {
+    "title": "Networking & Light Refreshments",
+    "start_time": "2025-12-05 16:30:00.000Z",
     "host": "",
     "panelists": "",
     "session_type": ""
